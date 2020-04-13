@@ -109,10 +109,9 @@ if __name__ == '__main__':
     if len(sys.argv) == 2:
         filename = sys.argv[1] # for drawing purposes
     else:
-        print("No input image given, so loading default image, messi5.jpg \n")
+        print("No input image given, so loading default image, beispiel_aus_datensatz.jpg \n")
         print("Correct Usage: python grabcut.py <filename> \n")
-        #filename = 'messi5.jpg'
-        filename = 'daten.jpg'
+        filename = 'beispiel_aus_datensatz.jpg'
 
     img = cv.imread(filename)
     img = cv.resize(img, (img.shape[1] // 8, img.shape[0] // 8), interpolation=cv.INTER_AREA)
